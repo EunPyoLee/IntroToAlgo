@@ -11,7 +11,8 @@ Let say A[i...j] represents the maximum subarray
 > 3. crossing the midpoint, so that left <= i <= mid <= j < right
 >> In that sense, we can recursively break down the problem into subproblems of left and right section, then solve those two subproblems and the crossing case. At the end, the original problem would be able to gather all of sub results and return the answer.
 
-'''
+
+```
 // Caculates the crossing zone and return the range of this zone with the SUM value
 FIND-MAX-CROSSING-SUBARRAY(A, left, mid, right)
 1   cur_sum = 0, begin = mid, end = mid
@@ -67,4 +68,5 @@ Recursive Case (N > 0):
   Time Complexity: O(NlogN)
   Space Complexity: O(logN) - recursive tree depth(# of stack frame we used)
 */
-'''
+
+```
