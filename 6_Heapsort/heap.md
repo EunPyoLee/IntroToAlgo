@@ -94,6 +94,3 @@ SUM[h=0 to logN] (n / 2^h)*O(h) == O( N * SUM[h=0 to logN] (h / 2^h))
 Hence, we can build a max-heap or /min-heap from an unordered array in "LINEAR TIME"
 
 STRICT TIME COMPLEXITY: O(N)
-```
-*/
-```
