@@ -86,11 +86,11 @@ BUILD-MAX-HEAP(A)
 /* O(N) many times calls on MAX-HEAPIFY which is O(logN) so time compelxity is O(NlogN)
 The tigher bound relies on the properties that an _n-element_ heap has height log(n) and at most `n / (2^(h))` nodes of any height h.
 However, more strictly, the time required by MAX-HEAPIFY when called on a node of height _h_ is `O(h)`, and so we can express the total cost of BUILD-MAX-HEAP as being bound from above by
-```
+
 SUM[h=0 to logN] (n / 2^h)*O(h) == O( N * SUM[h=0 to logN] (h / 2^h))
 == O(N * SUM[h=0 to INFINITE](h / 2^h))
 == O(N)
-
+```
 Hence, we can build a max-heap or /min-heap from an unordered array in "LINEAR TIME"
 
 STRICT TIME COMPLEXITY: O(N)
